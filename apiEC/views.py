@@ -41,7 +41,7 @@ def vistaDiabetes(request):
 
         #Se asigna un vector de entrada distinto para hacer la prediccion
         #Los datos se obtienen desde la solicitud enviada por el cliente
-        entradas_diabetes.loc[286] = [ json_data.get('edad'),json_data.get('genero'),json_data.get('ec'),json_data.get('ocupacion'),json_data.get('tresd'),json_data.get('sefvr'),json_data.get('ecaaqla'),json_data.get('cvcspeu'),json_data.get('uoafpc'),json_data.get('ecarh'),json_data.get('eccoccl'),json_data.get('ecuoaf'),json_data.get('esfhacap'),json_data.get('oapb'),json_data.get('oapc'),json_data.get('ecraca'),json_data.get('cqvuve'),json_data.get('saonacctet'),json_data.get('ccsa'),json_data.get('hpisa'),json_data.get('scmn'),json_data.get('seacr') ]
+        entradas_diabetes.loc[286] = [ json_data.get('edad'),json_data.get('genero'),json_data.get('ec'),json_data.get('ocupacion'),json_data.get('tresd'),json_data.get('sefvr'),json_data.get('ecaaqla'),json_data.get('cvcspeu'),json_data.get('uoafpc'),json_data.get('ecarh'),json_data.get('eccoccl'),json_data.get('ecuoaf'),json_data.get('esfhacap'),json_data.get('oapb'),json_data.get('oapc'),json_data.get('ecraca'),json_data.get('cqvuve'),json_data.get('saonacctet'),json_data.get('ccsa'),json_data.get('hpisa'),json_data.get('scmn'),json_data.get('seacr'),json_data.get('paecda') ]
 
         #Transformamos el dataset que ya incluye el vector distinto
         scaler = MinMaxScaler(feature_range=(0, 1))
@@ -72,7 +72,7 @@ def vistaHipertension(request):
 
         #Se asigna un vector de entrada distinto para hacer la prediccion
         #Los datos se obtienen desde la solicitud enviada por el cliente
-        entradas_hipertension.loc[326] = [ json_data.get('edad'),json_data.get('genero'),json_data.get('ec'),json_data.get('ocupacion'),json_data.get('tresd'),json_data.get('sefvr'),json_data.get('ecaaqla'),json_data.get('cvcspeu'),json_data.get('uoafpc'),json_data.get('ecarh'),json_data.get('eccoccl'),json_data.get('ecuoaf'),json_data.get('esfhacap'),json_data.get('oapb'),json_data.get('oapc'),json_data.get('ecraca'),json_data.get('cqvuve'),json_data.get('saonacctet'),json_data.get('ccsa'),json_data.get('hpisa'),json_data.get('scmn'),json_data.get('seacr') ]
+        entradas_hipertension.loc[326] = [ json_data.get('edad'),json_data.get('genero'),json_data.get('ec'),json_data.get('ocupacion'),json_data.get('tresd'),json_data.get('sefvr'),json_data.get('ecaaqla'),json_data.get('cvcspeu'),json_data.get('uoafpc'),json_data.get('ecarh'),json_data.get('eccoccl'),json_data.get('ecuoaf'),json_data.get('esfhacap'),json_data.get('oapb'),json_data.get('oapc'),json_data.get('ecraca'),json_data.get('cqvuve'),json_data.get('saonacctet'),json_data.get('ccsa'),json_data.get('hpisa'),json_data.get('scmn'),json_data.get('seacr'),json_data.get('paecda') ]
 
         #Transformamos el dataset que ya incluye el vector distinto
         scaler = MinMaxScaler(feature_range=(0, 1))
@@ -103,7 +103,7 @@ def vistaER(request):
 
         #Se asigna un vector de entrada distinto para hacer la prediccion
         #Los datos se obtienen desde la solicitud enviada por el cliente
-        entradas_er.loc[58] = [ json_data.get('edad'),json_data.get('genero'),json_data.get('ec'),json_data.get('ocupacion'),json_data.get('tresd'),json_data.get('sefvr'),json_data.get('ecaaqla'),json_data.get('cvcspeu'),json_data.get('uoafpc'),json_data.get('ecarh'),json_data.get('eccoccl'),json_data.get('ecuoaf'),json_data.get('esfhacap'),json_data.get('oapb'),json_data.get('oapc'),json_data.get('ecraca'),json_data.get('cqvuve'),json_data.get('saonacctet'),json_data.get('ccsa'),json_data.get('hpisa'),json_data.get('scmn'),json_data.get('seacr') ]
+        entradas_er.loc[58] = [ json_data.get('edad'),json_data.get('genero'),json_data.get('ec'),json_data.get('ocupacion'),json_data.get('tresd'),json_data.get('sefvr'),json_data.get('ecaaqla'),json_data.get('cvcspeu'),json_data.get('uoafpc'),json_data.get('ecarh'),json_data.get('eccoccl'),json_data.get('ecuoaf'),json_data.get('esfhacap'),json_data.get('oapb'),json_data.get('oapc'),json_data.get('ecraca'),json_data.get('cqvuve'),json_data.get('saonacctet'),json_data.get('ccsa'),json_data.get('hpisa'),json_data.get('scmn'),json_data.get('seacr'),json_data.get('paecda') ]
 
         #Transformamos el dataset que ya incluye el vector distinto
         scaler = MinMaxScaler(feature_range=(0, 1))
