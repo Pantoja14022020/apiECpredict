@@ -16,11 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import vistaDiabetes,vistaHipertension,vistaER
+from .views import vistaDiabetes,vistaHipertension,vistaER,vistaPASistolica,vistaPADiastolica
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('predecirDiabetes/',vistaDiabetes),
     path('predecirHipertension/',vistaHipertension),
-    path('predecirER/',vistaER)
+    path('predecirER/',vistaER),
+    path('PASistolica/<int:numero_dias>',vistaPASistolica),
+    path('PADiastolica/<int:numero_dias>',vistaPADiastolica)
 ]
